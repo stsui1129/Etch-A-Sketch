@@ -1,0 +1,26 @@
+#title {
+    text-align: center;
+    font-size: 30px;
+}
+
+#btn {
+    text-align: center;
+}
+#container {
+    display: grid;
+    border-radius: 8px;
+    border: 10px solid black;
+    height: 640px;
+    width: 640px;
+    margin: 10px auto;
+    padding: 0;
+
+}
+.cell {
+    background-color: white;
+    border:0 solid rgba(128, 128, 128, 0.5);
+}
+
+.filled {
+    background: black;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Etch-A-Sketch Project</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <header id="title">ETCH-A-SKETCH</header>
+    
+    <div class="buttons">
+        <button onclick="clearGrid()">Clear Grid</button>
+    </div>
+    <div id="container">
+    </div>
+<script>
+    let gridSize = 64;
+    const container = document.querySelector('#container');
+
+    function buildGrid(gridSize) {
+        container.style.gridTemplateRows = `repeat(${gridSize}, 1fr)`
+        container.style.gridTemplateColumns = `repeat(${gridSize}, 1fr)`
+    }
+        for (let i = 0; i < (gridSize * gridSize); i++) {
+            let cell = document.createElement('div');
+            cell.classList.add('cell');
+            cell.addEventListener('mouseover', e => {
+                e.target.classList.add('filled');
+        })
+            container.appendChild(cell);   
+        }
+    function clearGrid() {
+        const cells = document.querySelectorAll('.cell');
+            cells.forEach(cell => {
+                cell.classList.remove('filled');
+            });
+        gridSize = prompt("What grid size do you want to play with?(1-64)");
+        if (gridSize > 64 || gridSize < 1) {
+            alert("That's not within range. Please try again.")
+           } else 
+                buildGrid(gridSize);
+            }
+    buildGrid(gridSize);
+</script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,1 @@
+This is my Etch-A-Sketch project for the Odin Project. I had to figure out how to generate grids using javascript and draw over the grid when moused over them.
