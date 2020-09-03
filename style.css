@@ -1,10 +1,13 @@
 #title {
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
+    margin: 25px;
 }
 
-#btn {
+.buttons{
     text-align: center;
+    margin-bottom: 20px;
+    
 }
 #container {
     display: grid;
@@ -12,15 +15,11 @@
     border: 10px solid black;
     height: 640px;
     width: 640px;
-    margin: 10px auto;
+    margin: 45px auto;
     padding: 0;
 
 }
 .cell {
     background-color: white;
-    border:0 solid rgba(128, 128, 128, 0.5);
-}
-
-.filled {
-    background: black;
+    border: 1px solid gray;   
 }
