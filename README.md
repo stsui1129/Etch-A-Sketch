@@ -16,3 +16,5 @@ to
 container.textContent = '';
 
 https://stsui1129.github.io/Etch-A-Sketch/
+
+Next update: Add random colours + better CSS
