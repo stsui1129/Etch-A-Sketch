@@ -39,7 +39,7 @@ function randomColor() {
     cells.forEach(cell => { 
         cell.addEventListener('mouseover', () =>
             cell.style.backgroundColor = randomColorGenerator())
-    })
+    });
 }
 
 function blackColor() {
@@ -47,7 +47,7 @@ function blackColor() {
     cells.forEach(cell => {
         cell.addEventListener('mouseover', () =>
             cell.style.backgroundColor = "black")
-    })
+    });
 }
 
 function clearGrid() {
@@ -55,7 +55,7 @@ function clearGrid() {
     cells.forEach(cell => {
         cell.style.backgroundColor = ''; //removes background colour of cells
         container.removeChild(cell); //removes previously created cells
-    })
+    });
         
     //container.textContent = ''; also works here
     //Setting this property on a node removes all of its children
